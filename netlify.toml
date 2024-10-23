@@ -1,0 +1,4 @@
+[build]
+  publish = "public"
+  command = "composer install --no-dev && php artisan migrate --force && php artisan optimize"
+  environment = { PHP_VERSION = "8.2" }
